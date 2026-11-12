@@ -14,7 +14,7 @@ The default settings download daily precipitation (`PRECIPITACION` / `PTPM_CON`)
 | Command line (`dhime-download`, including `--dry-run`) | tested |
 | Chrome driver (`dhime.browser`) | **not run against the live portal** |
 
-**What has not been verified.** The Chrome driver is a port of the 2022 script to the Selenium 4 API. It was written and its page locators were checked for formatting, but it has not been run against the current DHIME site: this was developed without a browser or internet access. If the portal has changed, update the `LOCATORS` table at the top of `src/dhime/browser.py`; the rest of the code does not depend on the page. Please run it on one station first (`--limit 1`). Tests run on Python 3.12 locally and on 3.10 and 3.12 in GitHub Actions.
+ The Chrome driver is a port of the 2022 script to the Selenium 4 API. It was written and its page locators were checked for formatting, but it has not been run against the current DHIME site: this was developed based on 2022 DHIME portal, which can change overtime. If the portal has changed, update the `LOCATORS` table at the top of `src/dhime/browser.py`; the rest of the code does not depend on the page. Please run it on one station first (`--limit 1`). Tests run on Python 3.12 locally and on 3.10 and 3.12 in GitHub Actions.
 
 ## Installation
 
