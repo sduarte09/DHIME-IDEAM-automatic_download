@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dhime"
+version = "0.1.0"
+description = "Automatic download of IDEAM (Colombia) station data from the DHIME portal into one CSV table"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "Santiago Duarte"}]
+keywords = ["IDEAM", "DHIME", "Colombia", "hydrometeorology", "data download", "web scraping"]
+dependencies = ["pandas>=2.0"]
+
+[project.optional-dependencies]
+browser = ["selenium>=4.6"]  # needs Chrome; Selenium Manager downloads the matching driver
+test = ["pytest"]
+
+[project.scripts]
+dhime-download = "dhime.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

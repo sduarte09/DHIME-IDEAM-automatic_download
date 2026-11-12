@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "DHIME-IDEAM automatic download"
+abstract: "Automatic download of daily station data from the IDEAM DHIME portal (Colombia) into one CSV table, with resume."
+version: 0.1.0
+# Update date-released when you publish the release; add your ORCID and, after the first
+# Zenodo release, the DOI (doi: "10.5281/zenodo.XXXXXXX").
+date-released: 2026-11-12
+authors:
+  - family-names: Duarte
+    given-names: Santiago
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/sduarte09/DHIME-IDEAM-automatic_download"
+license: MIT
+keywords:
+  - IDEAM
+  - DHIME
+  - Colombia
+  - hydrometeorology
+  - web scraping
+  - data download

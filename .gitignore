@@ -2,3 +2,12 @@
 *.ini
 **/desktop.ini
 desktop.ini
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+downloads/
+dhime_progress.json
